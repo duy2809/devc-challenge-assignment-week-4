@@ -1,6 +1,6 @@
-# Rock, Paper, Scissors 🧗‍🗞️✂️
+# Todo List 📝 📅
 
-Assignment week 3 of React Native DevC 💻 📱
+Assignment week 4 of React Native DevC 💻 📱
 
 **Demo:**
 
@@ -8,23 +8,26 @@ Assignment week 3 of React Native DevC 💻 📱
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-**Time spent:** 6 hours spent in total
+**Time spent:** 12 hours spent in total
 
 **Completed Features 🎯🥇🏆:**
 
- * [x] User can select Rock, Paper, or Scissors
- * [x] User can see image of their selection
- * [x] User can see text of their selection
- * [x] User can see image of computer's selection
- * [x] User can see text of computer's selection
- * [x] User can see prompt indicating who won the round
+ * [x] User can see a list of their todos.
+ * [x] User can toggle a todo's status of active/done.
+ * [x] User can see a different color todo background based on the todo's status.
+ * [x] When a user toggles a todo, they're directed to an individual todo screen.
+ * [x] If the user's todo list is too long, they can continue scrolling so they can see the input to add a new todo.
+ * [x] User can add a new todo by entering it and submitting.
+ * [x] User will see the input reset when they submit their todo.
+ * [x] User can see what number a todo is.
 
 **Completed Rockets 🚀:**
 
- * [x] User can see how many games they've played total
- * [x] User can see how games they've won, lose, tied.
- * [x] User can see the percentages of wins, losses, and tie games they've had.
-
+ * [x] User can see completed todos on the ``CompleteScreen``.
+ * [x] User can see active todos on the ``ActiveScreen``.
+ * [x] User can delete a todo by long pressing it and being prompted to confirm their action.
+ * [x] User can cancel deleting a todo.
+ * [x] User can slide the todos list to see the entire app wallpaper.
 
 ## How to test this app
 
@@ -36,20 +39,21 @@ npm install expo-cli --global
 
 **2. Clone the folder app:**
 ```sh
-git clone https://github.com/duy2809/devc-challenge-assignment-week-3.git
+git clone https://github.com/duy2809/devc-challenge-assignment-week-4.git
 ```
 
-**3. Install all the needed node_modules package using:**
+**3. Change directory and install all the needed node_modules package using:**
 
 ```sh
+cd devc-challenge-assignment-week-4
 npm install
 ```
 
-**4. Change directory to this folder and run app:**
+**4. Run app:**
 
 ```sh
 expo start
 ```
 
 **5. Notes:**
-After the app runs successfully, you can test either on the stimulator or your own smartphone by scanning the QR code on Expo metro bundler. Since this app requires you to log in, you can sign up by yourself
+After the app runs successfully, you can test either on the stimulator or your own smartphone by scanning the QR code on Expo Metro Bundler.
