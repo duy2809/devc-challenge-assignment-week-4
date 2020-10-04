@@ -19,12 +19,12 @@ export default function MainTabNavigator() {
             <Ionicons
               name={routeIcons[route.name]}
               size={30}
-              color={focused ? "blue" : "gray"}
+              color={focused ? "#016FB9" : "gray"}
             />
           ),
         })}
         tabBarOptions={{
-          activeTintColor: "blue",
+          activeTintColor: "#016FB9",
           inactiveTintColor: "gray",
         }}
       >

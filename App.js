@@ -1,6 +1,6 @@
 import React from "react";
-import AppNavigator from "./navigations/MainTabNavigator";
+import AppContainer from "./navigations/MainTabNavigator";
 
 export default function App() {
-  return <AppNavigator />;
+  return <AppContainer />;
 }

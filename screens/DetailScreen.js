@@ -1,10 +1,22 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 
 export default function DetailScreen({ route }) {
   const { id, status, body } = route.params;
+  // console.log(route.params);
   return (
     <View style={styles.container}>
+      {status === "Done" ? (
+        <Image
+          style={styles.image}
+          source={require("../assets/checked.png")}
+        ></Image>
+      ) : (
+        <Image
+          style={styles.image}
+          source={require("../assets/processing.png")}
+        ></Image>
+      )}
       <View style={styles.headerContainer}>
         <Text style={styles.headerText}>
           {id}. {status}
@@ -31,5 +43,10 @@ const styles = StyleSheet.create({
   bodyText: {
     fontSize: 50,
     textAlign: "center",
+  },
+  image: {
+    height: 80,
+    width: 80,
+    marginBottom: 10,
   },
 });

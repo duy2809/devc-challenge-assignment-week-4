@@ -1,19 +1,13 @@
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { createStackNavigator } from "@react-navigation/stack";
+import ActiveScreen from "../screens/ActiveScreen";
+
+const Stack = createStackNavigator();
 
 export default function ActiveNavigator() {
   return (
-    <View style={styles.container}>
-      <Text>Active</Text>
-    </View>
+    <Stack.Navigator>
+      <Stack.Screen name="Active" component={ActiveScreen} />
+    </Stack.Navigator>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    backgroundColor: "#fff",
-    justifyContent: "center",
-  },
-});
